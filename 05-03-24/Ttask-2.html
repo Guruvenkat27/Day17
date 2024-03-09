@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+ <style>
+    *{
+        padding:0;
+        margin: 0;
+
+    }
+    nav{
+        border: 2px solid transparent;
+        height: 8vh;
+        margin-top: 5px;display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        position: fixed;
+        width: 100%;
+        top: 90%;
+    }
+    section{
+        border: 2px solid transparent;
+        height: 88vh;
+        margin-top: 15px;
+        
+       
+
+    }
+.box{
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+    .b1{
+        border: 2px solid transparent;
+        height: 40vh;
+        width: 89%;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .inneer{
+        border: 2px solid transparent;
+        height: 40vh;
+        width: 18.7%;
+        overflow: hidden;
+        box-shadow: 4px 2px 18px transparent;
+        transition: .4s linear;
+
+        
+    }
+   
+.imag{
+    background-image: url('./ironman_lob_crd_01_4.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag1{
+    background-image: url('./hulkdisney.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px 340px;
+}
+.imag2{
+    background-image: url('./thor.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag3{
+    background-image: url('./ironman2_lob_crd_01_4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag4{
+    background-image: url('./547ea41f60312a3a2fbc20f6c852ea41.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag5{
+    background-image: url('./theavengers_lob_crd_03_0.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag6{
+    background-image: url('./qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag7{
+    background-image: url('./thorjpg-882131.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 329px;
+}
+.imag8{
+    background-image: url('./cap2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag9{
+    background-image: url('./guardiansofthegalaxy_lob_crd_03_0.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px 340px;
+}
+.imag10{
+    background-image: url('./ageofultron.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag11{
+    background-image: url('./ant-man_lob_crd_01_9.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag12{
+    background-image: url('./civil.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag13{
+    background-image: url('./strange.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag14{
+    background-image: url('./gar.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 350px;
+}
+.imag15{
+    background-image: url('./spidy.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 329px;
+}
+.cover{
+    
+    border: 2px solid transparent;
+    color: black;
+height: 20vh;   
+overflow-y: scroll;
+color: white;
+transform: translateY(340px);
+background-color: rgba(0, 0, 0, 0.725);
+transition: .4s linear;
+
+
+
+}
+.cover::-webkit-scrollbar{
+    width: 0;
+}
+.inneer:hover .cover{
+    transform: translateY(165px);
+}
+.inneer:hover{
+    transform: scale(1.1);
+    margin: 10px 0;
+}
+p{
+    font-size: 16px;
+    margin-top: 7px;
+}
+h1{
+    margin-left: 6px;
+}
+nav button{
+    border-radius: 20px;
+    width: 4%;
+    border: none;
+    height: 4vh;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+nav button a{
+    text-decoration: none;
+    font-size: 19px;
+}
+nav button:hover{
+    background-color: rgb(178, 14, 219);
+    
+
+}
+
+.tar1{
+    display: none;
+}
+.tar1:target{
+    display: block;
+}
+.tar2{
+    display: none;
+}
+.tar2:target{
+    display: block;
+}
+ </style>
+</head>
+<body>
+   
+    <section class="tar1" id="tar">
+<div class="box">
+    <div class="b1">
+        <div class="inneer imag">
+            <div class="cover">
+<h1>Info:</h1>
+<p>A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon. Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit and uses it to combat crime and terrorism.</p>
+            </div>
+        </div>
+
+    <div class="inneer imag1">
+        <div class="cover">
+            <h1>Info:</h1>
+            <p>Scientist Bruce Banner (Edward Norton) desperately seeks a cure for the gamma radiation that contaminated his cells and turned him into The Hulk. Cut off from his true love Betty Ross (Liv Tyler) and forced to hide from his nemesis, Gen. Thunderbolt Ross (William Hurt), Banner soon comes face-to-face with a new threat: a supremely powerful enemy known as The Abomination (Tim Roth).</p>
+        </div>
+    </div>
+    <div class="inneer imag2"> 
+        <div class="cover">
+<h1>Info:</h1>
+<p>With the world now aware that he is Iron Man, billionaire inventor Tony Stark (Robert Downey Jr.) faces pressure from all sides to share his technology with the military. He is reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong hands. With Pepper Potts (Gwyneth Paltrow) and "Rhodey" Rhodes (Don Cheadle) by his side, Tony must forge new alliances and confront a powerful new enemy.</p>
+        </div>
+    </div>
+    <div class="inneer imag3">
+        <div class="cover">
+<h1>Info:</h1>
+<p>As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thor's brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.</p>
+        </div>
+    </div></div>
+    <div class="b1">
+        <div class="inneer imag4">
+            <div class="cover">
+<h1>Info:</h1>
+<p>It is 1941 and the world is in the throes of war. Steve Rogers (Chris Evans) wants to do his part and join America's armed forces, but the military rejects him because of his small stature. Finally, Steve gets his chance when he is accepted into an experimental program that turns him into a supersoldier called Captain America. Joining forces with Bucky Barnes (Sebastian Stan) and Peggy Carter (Hayley Atwell), Captain America leads the fight against the Nazi-backed HYDRA organization.</p>
+            </div>
+        </div>
+        <div class="inneer imag5"> <div class="cover">
+<h1>Info:</h1>
+<p>When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth. Joining Fury's "dream team" are Iron Man (Robert Downey Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).</p>
+        </div></div>
+        <div class="inneer imag6"> <div class="cover">
+<h1>Info:</h1>
+<p>Plagued with worry and insomnia since saving New York from destruction, Tony Stark (Robert Downey Jr.), now, is more dependent on the suits that give him his Iron Man persona -- so much so that every aspect of his life is affected, including his relationship with Pepper (Gwyneth Paltrow). After a malevolent enemy known as the Mandarin (Ben Kingsley) reduces his personal world to rubble, Tony must rely solely on instinct and ingenuity to avenge his losses and protect the people he loves.</p>
+        </div></div>
+        <div class="inneer imag7"> <div class="cover">
+<h1>Info:</h1>
+<p>In ancient times, the gods of Asgard fought and won a war against an evil race known as the Dark Elves. The survivors were neutralized, and their ultimate weapon -- the Aether -- was buried in a secret location. Hundreds of years later, Jane Foster (Natalie Portman) finds the Aether and becomes its host, forcing Thor (Chris Hemsworth) to bring her to Asgard before Dark Elf Malekith (Christopher Eccleston) captures her and uses the weapon to destroy the Nine Realms -- including Earth.</p>
+        </div></div>
+    </div>
+</div>
+    </section>
+    <section class="tar2" id="2">
+        <div class="box">
+            <div class="b1">
+                <div class="inneer imag8">
+                    <div class="cover">
+        <h1>Info:</h1>
+<p>After the cataclysmic events in New York with his fellow Avengers, Steve Rogers, aka Captain America (Chris Evans), lives in the nation's capital as he tries to adjust to modern times. An attack on a S.H.I.E.L.D. colleague throws Rogers into a web of intrigue that places the whole world at risk. Joining forces with the Black Widow (Scarlett Johansson) and a new ally, the Falcon, Rogers struggles to expose an ever-widening conspiracy, but he and his team soon come up against an unexpected enemy.</p>                    </div>
+                </div>
+        
+            <div class="inneer imag9">
+                <div class="cover">
+                    <h1>Info:</h1>
+<p>Brash space adventurer Peter Quill (Chris Pratt) finds himself the quarry of relentless bounty hunters after he steals an orb coveted by Ronan, a powerful villain. To evade Ronan, Quill is forced into an uneasy truce with four disparate misfits: gun-toting Rocket Raccoon, treelike-humanoid Groot, enigmatic Gamora, and vengeance-driven Drax the Destroyer. But when he discovers the orb's true power and the cosmic threat it poses, Quill must rally his ragtag group to save the universe.</p>                </div>
+            </div>
+            <div class="inneer imag10"> 
+                <div class="cover">
+        <h1>Info:</h1>
+        <p>When Tony Stark (Robert Downey Jr.) jump-starts a dormant peacekeeping program, things go terribly awry, forcing him, Thor (Chris Hemsworth), the Incredible Hulk (Mark Ruffalo) and the rest of the Avengers to reassemble. As the fate of Earth hangs in the balance, the team is put to the ultimate test as they battle Ultron, a technological terror hell-bent on human extinction. Along the way, they encounter two mysterious and powerful newcomers, Pietro and Wanda Maximoff.</p>                </div>
+    </div>
+            <div class="inneer imag11">
+                <div class="cover">
+        <h1>Info:</h1>
+        <p>Forced out of his own company by former protégé Darren Cross, Dr. Hank Pym (Michael Douglas) recruits the talents of Scott Lang (Paul Rudd), a master thief just released from prison. Lang becomes Ant-Man, trained by Pym and armed with a suit that allows him to shrink in size, possess superhuman strength and control an army of ants. The miniature hero must use his new skills to prevent Cross, also known as Yellowjacket, from perfecting the same technology and using it as a weapon for evil.</p>                </div>
+    </div></div>
+            <div class="b1">
+                <div class="inneer imag12">
+                    <div class="cover">
+        <h1>Info:</h1>
+        <p>Political pressure mounts to install a system of accountability when the actions of the Avengers lead to collateral damage. The new status quo deeply divides members of the team. Captain America (Chris Evans) believes superheroes should remain free to defend humanity without government interference. Iron Man (Robert Downey Jr.) sharply disagrees and supports oversight. As the debate escalates into an all-out feud, Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner) must pick a side</p>                </div>
+    
+                </div>
+                <div class="inneer imag13"> <div class="cover">
+        <h1>Info:</h1>
+        Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.                </div></div>
+                <div class="inneer imag14"> <div class="cover">
+        <h1>Info:</h1>
+        Peter Quill and his fellow Guardians are hired by a powerful alien race, the Sovereign, to protect their precious batteries from invaders. When it is discovered that Rocket has stolen the items they were sent to guard, the Sovereign dispatch their armada to search for vengeance. As the Guardians try to escape, the mystery of Peter's parentage is revealed.                </div></div>
+                <div class="inneer imag15"> <div class="cover">
+        <h1>Info:</h1>
+        Thrilled by his experience with the Avengers, young Peter Parker returns home to live with his Aunt May. Under the watchful eye of mentor Tony Stark, Parker starts to embrace his newfound identity as Spider-Man. He also tries to return to his normal daily routine -- distracted by thoughts of proving himself to be more than just a friendly neighborhood superhero. Peter must soon put his powers to the test when the evil Vulture emerges to threaten everything that he holds dear.                </div></div>
+            </div>
+        </div>
+            </section>
+    <nav>
+<button><a href="#tar">1</a></button>
+<button><a href="#2">2</a></button>
+<button><a href="">3</a></button>
+<button><a href="">4</a></button>
+<button><a href="">5</a></button>
+    </nav>
+</body>
+</html>

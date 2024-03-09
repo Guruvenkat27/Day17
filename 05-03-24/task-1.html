@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+        section{
+            border: 2px solid gray;
+            width: 70%;
+            height: 60vh;
+            display: grid;
+            padding: 4px;
+          
+          gap: 7px;  grid-template-columns: auto auto auto auto;
+        }
+        .b1{
+            border: 2px solid gray;
+            height: 28vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .bo{
+            background-color: rgb(72, 35, 35);
+        
+        }
+        .b2{
+            background-color: rgb(211, 231, 28);
+            transition: .4s linear;
+        }
+        .b3{
+            background-color: rgb(0, 242, 255);
+            transition: .4s linear;
+        }
+        .b4{
+            background-color: rgb(0, 0, 255);
+        }
+        .b5{
+            background-color: rgb(255, 0, 225);
+        }
+        .b6{
+            background-color: rgb(0, 255, 102);
+        }
+        .b7{
+            background-color: rgb(37, 143, 130);
+        }
+        .b8{
+            background-color: rgb(208, 255, 0);
+        }
+
+        .bo:hover{
+            background-image: url('./apple-fruit.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+      background-color: white;
+      transform: scale(1.1);
+        }
+        .b1:hover .bo{
+            transform: scale(1.1);
+        }
+        .b1:nth-child(2):hover{
+            transform: rotate(180deg);
+        }
+        .b1:nth-child(2):hover{
+            transform: translateY(20px);
+        }
+        .b2:hover{
+            background-image: url('./watermelon.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 220px 200px;
+      background-color: white;
+        }
+        .b3:hover{
+            background-image: url('./360_F_529844955_5SF9gpKGnAXiDghjKdwYf6vNz2mHxvtw.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+      background-color: white;
+        }
+        .b4:hover{
+            background-image: url('./360_F_57788396_lfSXeffCmgcMpentX0zCtEsV1o5g4enf.webp');
+      background-position: center;
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+        }
+        .b5:hover{
+            background-image: url('./fresh_banana_picture_167146.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+      background-color: white;
+        }
+        .b6:hover{
+            background-image: url('./1-250x250.webp');
+      background-position: center;
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+        }
+        .b7:hover{
+            background-image: url('./strawberry.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: white;
+      background-size: 200px 200px;
+        }
+        .b8:hover{
+            background-image: url('./pinea.jpg');
+      background-position: center;
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+        }
+     
+       p{
+        font-size: 20px;font-weight: 600;
+        color: white;
+       }
+       .b1:hover p{
+       color: transparent;
+       }
+
+    </style>
+</head>
+<body>
+    <section>
+<div class="b1 bo">
+    <p>APPLE</p>
+</div>
+<div class="b1 b2">
+    <p>WATERMELON</p>
+</div>
+<div class="b1 b3">
+    <p>GUAVA</p>
+</div>
+<div class="b1 b4">
+    <p>MELON</p>
+</div>
+<div class="b1 b5">
+    <p>BANANA</p>
+</div>
+<div class="b1 b6">
+    <p>SAPOTA</p>
+</div>
+<div class="b1 b7">
+    <p>STRAWBERRY</p>
+</div>
+<div class="b1 b8">
+    <p>PINEAPPLE</p>
+</div>
+
+</body>
+</html>
